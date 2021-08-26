@@ -2,7 +2,7 @@
 
 $students = [
 
-    "Class1" => [
+    "Class 1" => [
     [     
         "name" => "Alessio",
         "surname" => "Rossi",
@@ -15,7 +15,7 @@ $students = [
     ]
 ],
 
-    "Class2" => [
+    "Class 2" => [
     [
         "name" => "Martina",
         "surname" => "Grigi",
@@ -28,7 +28,7 @@ $students = [
     ]
 ],
 
-    "Class3" => [
+    "Class 3" => [
     [
         "name" => "Marco",
         "surname" => "Gialli",
@@ -42,13 +42,13 @@ $students = [
 ]
 ];
 
-    foreach ($students as &$element){
-        foreach($element as &$value){
-            for($i = 0; count($element) > $i; $i++){
-                $avg_value = array_sum($value['votes']) / count($value['votes']);
-            }
-            echo(key($students) . ' ' . $value['name'] . $avg_value);
+    foreach ($students as $key => $element){
+        
+        foreach($element as $value){     
+        $avg_value = array_sum($value['votes']) / count($value['votes']);
+        echo ($key) . ' ' . $value['name'] . ' ' . $value['surname'] . ' ' . $avg_value . '<br>';
         }
+        
     }
 
 
