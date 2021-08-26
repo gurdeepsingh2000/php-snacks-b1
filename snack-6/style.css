@@ -1,0 +1,13 @@
+.rectangle-grey{
+    background-color: grey;
+    width: 80px;
+    border: 5px solid black;
+    font-weight: bold;
+}
+
+.rectangle-green{
+    background-color: green;
+    width: 80px;
+    border: 5px solid yellow;
+    font-weight: bold;
+}
